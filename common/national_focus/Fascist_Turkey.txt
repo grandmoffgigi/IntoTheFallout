@@ -1,0 +1,711 @@
+focus_tree = {
+	id = Fascist_Turkey
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = FTD
+		}
+	}
+
+	default = no
+
+	focus = {
+		id = Revive_turkish_economy
+		icon = GFX_focus_generic_military_academy
+		cost = 10.00
+		x = 13
+		y = 4
+			completion_reward = {
+					add_political_power = 150
+				}
+
+	}
+	focus = {
+		id = Continue_Fascist_Regime
+		icon = GFX_focus_generic_italy_first
+		cost = 10.00
+		x = 37
+		y = 3
+
+			completion_reward = {
+            add_ideas = fascism_drift_ARG
+        }
+	}
+
+	focus = {
+		id = war-for-resources
+		icon = GFX_focus_eng_expose_the_belly_of_the_bear
+		cost = 10.00
+		prerequisite = {
+			focus = Revive_turkish_economy
+		}
+		x = 11
+		y = 5
+			completion_reward = {
+					add_war_support = 0.2
+				}
+
+	}
+	focus = {
+		id = airbase-1
+		icon = GFX_focus_jap_zero
+		cost = 10.00
+		prerequisite = {
+			focus = war-for-resources
+		}
+		x = 8
+		y = 6
+			completion_reward = {
+					354 = {
+							add_building_construction = {
+									type = air_base
+									level = 2
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = airbase-2
+		icon = GFX_goal_generic_air_fighter
+		cost = 10.00
+		prerequisite = {
+			focus = airbase-1
+		}
+		x = 8
+		y = 7
+			completion_reward = {
+					354 = {
+							add_building_construction = {
+									type = air_base
+									level = 2
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = mili-factory-1
+		icon = GFX_focus_generic_industry_1
+		cost = 10.00
+		prerequisite = {
+			focus = war-for-resources
+		}
+		x = 11
+		y = 6
+			available = {
+					owns_state = 354
+					owns_state = 349
+					owns_state = 350
+				}
+			completion_reward = {
+					354 = {
+							add_extra_state_shared_building_slots = 2
+							add_building_construction = {
+									type = arms_factory
+									level = 2
+									instant_build = yes
+								}
+						}
+					349 = {
+							add_extra_state_shared_building_slots = 2
+							add_building_construction = {
+									type = arms_factory
+									level = 2
+									instant_build = yes
+								}
+						}
+					350 = {
+							add_extra_state_shared_building_slots = 2
+							add_building_construction = {
+									type = arms_factory
+									level = 2
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = mili-factory-2
+		icon = GFX_focus_generic_industry_2
+		cost = 10.00
+		prerequisite = {
+			focus = mili-factory-1
+		}
+		x = 11
+		y = 7
+			available = {
+					owns_state = 354
+					owns_state = 349
+					owns_state = 350
+				}
+			completion_reward = {
+					354 = {
+							add_extra_state_shared_building_slots = 2
+							add_building_construction = {
+									type = arms_factory
+									level = 2
+									instant_build = yes
+								}
+						}
+					349 = {
+							add_extra_state_shared_building_slots = 2
+							add_building_construction = {
+									type = arms_factory
+									level = 2
+									instant_build = yes
+								}
+						}
+					350 = {
+							add_extra_state_shared_building_slots = 2
+							add_building_construction = {
+									type = arms_factory
+									level = 2
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = problems-at-home
+		icon = GFX_focus_eng_concessions_to_the_trade_unions
+		cost = 10.00
+		prerequisite = {
+			focus = Revive_turkish_economy
+		}
+		x = 15
+		y = 5
+			completion_reward = {
+					add_stability = 0.4
+				}
+
+	}
+	focus = {
+		id = civi-factory-1
+		icon = GFX_focus_generic_industry_1
+		cost = 10.00
+		prerequisite = {
+			focus = problems-at-home
+		}
+		x = 15
+		y = 6
+			available = {
+					owns_state = 354
+					owns_state = 349
+					owns_state = 350
+				}
+			completion_reward = {
+					354 = {
+							add_extra_state_shared_building_slots = 2
+							add_building_construction = {
+									type = industrial_complex
+									level = 2
+									instant_build = yes
+								}
+						}
+					349 = {
+							add_extra_state_shared_building_slots = 2
+							add_building_construction = {
+									type = industrial_complex
+									level = 2
+									instant_build = yes
+								}
+						}
+					350 = {
+							add_extra_state_shared_building_slots = 2
+							add_building_construction = {
+									type = industrial_complex
+									level = 2
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = civi-factory-2
+		icon = GFX_focus_generic_industry_2
+		cost = 10.00
+		prerequisite = {
+			focus = civi-factory-1
+		}
+		x = 15
+		y = 7
+			available = {
+					owns_state = 354
+					owns_state = 349
+					owns_state = 350
+				}
+			completion_reward = {
+					354 = {
+							add_extra_state_shared_building_slots = 2
+							add_building_construction = {
+									type = industrial_complex
+									level = 2
+									instant_build = yes
+								}
+						}
+					349 = {
+							add_extra_state_shared_building_slots = 2
+							add_building_construction = {
+									type = industrial_complex
+									level = 2
+									instant_build = yes
+								}
+						}
+					350 = {
+							add_extra_state_shared_building_slots = 2
+							add_building_construction = {
+									type = industrial_complex
+									level = 2
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = upgrade-the-highway-1
+		icon = GFX_goal_generic_construct_infrastructure
+		cost = 10.00
+		prerequisite = {
+			focus = problems-at-home
+		}
+		x = 18
+		y = 6
+			completion_reward = {
+					350 = {
+							add_building_construction = {
+									type = infrastructure
+									level = 2
+									instant_build = yes
+								}
+						}
+					350 = {
+							add_building_construction = {
+									type = infrastructure
+									level = 2
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = upgrade-the-highway-2
+		icon = GFX_goal_generic_construct_civilian
+		cost = 10.00
+		prerequisite = {
+			focus = upgrade-the-highway-1
+		}
+		x = 18
+		y = 7
+			completion_reward = {
+					350 = {
+							add_building_construction = {
+									type = infrastructure
+									level = 2
+									instant_build = yes
+								}
+						}
+					350 = {
+							add_building_construction = {
+									type = infrastructure
+									level = 2
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+
+	focus = {
+		id = Conquest_For_Turkey
+		icon = GFX_focus_secret_rearmament
+		cost = 10.00
+		prerequisite = {
+			focus = Continue_Fascist_Regime
+		}
+		x = 27
+		y = 5
+
+			completion_reward = {
+		    add_political_power = 150
+		    add_war_support = 0.2
+			}
+	}
+
+	focus = {
+		id = push_russia_out
+		icon = GFX_goal_generic_major_war
+		cost = 10.00
+		prerequisite = {
+			focus = Conquest_For_Turkey
+		}
+		x = 25
+		y = 6
+			completion_reward = {
+			create_wargoal = { type = annex_everything target = ARM }
+			}
+	}
+
+	focus = {
+		id = make_peace_With_russia
+		icon = GFX_focus_hol_the_foundations_of_defense
+		cost = 10.00
+		prerequisite = {
+			focus = push_russia_out
+		}
+		x = 23
+		y = 7
+
+			available = {
+			controls_state = 353
+			controls_state = 352
+			has_war_with = SOV
+			}
+
+	    completion_reward = {
+	    transfer_state = 353
+	    transfer_state = 342
+
+			SOV = {
+				white_peace = {
+					tag = FTD
+					message = ""
+				}
+			}
+          }
+	    }
+
+	focus = {
+		id = Push_For_Old_Capital
+		icon = GFX_focus_generic_self_management
+		cost = 10.00
+		prerequisite = {
+			focus = Conquest_For_Turkey
+		}
+		x = 29
+		y = 6
+
+			completion_reward = {
+			create_wargoal = { type = annex_everything target = TUR }
+			}
+	    }
+
+	focus = {
+		id = Proclaim_Reunification
+		icon = GFX_goal_generic_intelligence_exchange
+		cost = 10.00
+		prerequisite = {
+			focus = push_russia_out
+		}
+		prerequisite = {
+			focus = Push_For_Old_Capital
+		}
+		x = 27
+		y = 7
+		available = {
+               FTD {
+					owns_state = 344
+					owns_state = 348
+					owns_state = 356
+					owns_state = 347
+					owns_state = 49
+					owns_state = 346
+					owns_state = 345
+					owns_state = 340
+					owns_state = 339
+					owns_state = 342
+					owns_state = 343
+					owns_state = 341
+				}
+			}
+	    completion_reward = {
+         set_cosmetic_tag = FTD_Reunification:0
+	    }
+	}
+
+	focus = {
+		id = Takeout_political_opposition
+		icon = GFX_focus_generic_little_entente
+		cost = 10.00
+		prerequisite = {
+			focus = Continue_Fascist_Regime
+		}
+		x = 31
+		y = 5
+	    completion_reward = {
+	    add_war_support = 0.3
+	    add_popularity = {
+    ideology = fascism
+    popularity = 0.2
+}
+	    }
+	}
+	focus = {
+		id = Militarized-Society
+		icon = GFX_focus_generic_tank_production
+		cost = 10.00
+		prerequisite = {
+			focus = Continue_Fascist_Regime
+		}
+		x = 35
+		y = 5
+	    completion_reward = {
+	    add_war_support = 0.2
+	    }
+	}
+	focus = {
+		id = set_up_labour_Camps
+		icon = GFX_focus_cze_german_puppet
+		cost = 10.00
+		prerequisite = {
+			focus = Takeout_political_opposition
+		}
+		prerequisite = {
+			focus = Militarized-Society
+		}
+		x = 33
+		y = 6
+	    completion_reward = {
+	    add_war_support = 0.2
+	    }
+	}
+	focus = {
+		id = Set_Up_Death_Camps
+		icon = GFX_focus_hol_abandon_the_gold_standard
+		cost = 10.00
+		prerequisite = {
+			focus = set_up_labour_Camps
+		}
+		x = 33
+		y = 7
+	    completion_reward = {
+	    add_war_support = 0.2
+
+	        }
+	    }
+
+	focus = {
+		id = mili-factory-3
+		icon = GFX_focus_generic_industry_3
+		cost = 10.00
+		prerequisite = {
+			focus = mili-factory-2
+		}
+		x = 11
+		y = 8
+			available = {
+					owns_state = 354
+					owns_state = 349
+					owns_state = 350
+				}
+			completion_reward = {
+					354 = {
+							add_extra_state_shared_building_slots = 2
+							add_building_construction = {
+									type = arms_factory
+									level = 2
+									instant_build = yes
+								}
+						}
+					349 = {
+							add_extra_state_shared_building_slots = 2
+							add_building_construction = {
+									type = arms_factory
+									level = 2
+									instant_build = yes
+								}
+						}
+					350 = {
+							add_extra_state_shared_building_slots = 2
+							add_building_construction = {
+									type = arms_factory
+									level = 2
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = civi-factory-3
+		icon = GFX_focus_generic_industry_3
+		cost = 10.00
+		prerequisite = {
+			focus = civi-factory-2
+		}
+		x = 15
+		y = 8
+			available = {
+					owns_state = 354
+					owns_state = 349
+					owns_state = 350
+				}
+			completion_reward = {
+					354 = {
+							add_extra_state_shared_building_slots = 2
+							add_building_construction = {
+									type = industrial_complex
+									level = 2
+									instant_build = yes
+								}
+						}
+					349 = {
+							add_extra_state_shared_building_slots = 2
+							add_building_construction = {
+									type = industrial_complex
+									level = 2
+									instant_build = yes
+								}
+						}
+					350 = {
+							add_extra_state_shared_building_slots = 2
+							add_building_construction = {
+									type = industrial_complex
+									level = 2
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = fas_mili_1
+		icon = GFX_focus_generic_industry_1
+		cost = 10.00
+		prerequisite = {
+			focus = Militarized-Society
+		}
+		prerequisite = {
+			focus = Continue_Fascist_Regime
+		}
+		x = 37
+		y = 6
+
+			available = {
+					owns_state = 354
+					owns_state = 349
+					owns_state = 350
+				}
+			completion_reward = {
+					354 = {
+							add_extra_state_shared_building_slots = 2
+							add_building_construction = {
+									type = arms_factory
+									level = 2
+									instant_build = yes
+								}
+						}
+					349 = {
+							add_extra_state_shared_building_slots = 2
+							add_building_construction = {
+									type = arms_factory
+									level = 2
+									instant_build = yes
+								}
+						}
+					350 = {
+							add_extra_state_shared_building_slots = 2
+							add_building_construction = {
+									type = arms_factory
+									level = 2
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = fas_mili_2
+		icon = GFX_focus_generic_industry_2
+		cost = 10.00
+		prerequisite = {
+			focus = fas_mili_1
+		}
+		x = 37
+		y = 7
+
+			available = {
+					owns_state = 354
+					owns_state = 349
+					owns_state = 350
+				}
+			completion_reward = {
+					354 = {
+							add_extra_state_shared_building_slots = 2
+							add_building_construction = {
+									type = arms_factory
+									level = 2
+									instant_build = yes
+								}
+						}
+					349 = {
+							add_extra_state_shared_building_slots = 2
+							add_building_construction = {
+									type = arms_factory
+									level = 2
+									instant_build = yes
+								}
+						}
+					350 = {
+							add_extra_state_shared_building_slots = 2
+							add_building_construction = {
+									type = arms_factory
+									level = 2
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = fas_mili_3
+		icon = GFX_focus_generic_industry_3
+		cost = 10.00
+		prerequisite = {
+			focus = fas_mili_2
+		}
+		x = 37
+		y = 8
+
+			available = {
+					owns_state = 354
+					owns_state = 349
+					owns_state = 350
+				}
+			completion_reward = {
+					354 = {
+							add_extra_state_shared_building_slots = 2
+							add_building_construction = {
+									type = arms_factory
+									level = 2
+									instant_build = yes
+								}
+						}
+					349 = {
+							add_extra_state_shared_building_slots = 2
+							add_building_construction = {
+									type = arms_factory
+									level = 2
+									instant_build = yes
+								}
+						}
+					350 = {
+							add_extra_state_shared_building_slots = 2
+							add_building_construction = {
+									type = arms_factory
+									level = 2
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+}

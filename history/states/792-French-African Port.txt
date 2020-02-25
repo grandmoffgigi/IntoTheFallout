@@ -1,0 +1,24 @@
+state={
+	id=792
+	name="STATE_792"
+	provinces={
+		9945 
+	}
+	
+	state_category = town
+	history={
+		owner = FRA
+		add_core_of = MOR
+		buildings = {
+			infrastructure = 1
+			9945 = {
+			naval_base = 3
+			}
+		}
+		victory_points = {
+			9945 5
+		}
+	}
+	manpower=811486
+	buildings_max_level_factor=1.000
+}

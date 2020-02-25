@@ -1,0 +1,1093 @@
+focus_tree = {
+	id = soviet_focus
+	country = {
+		factor = 1
+		modifier = {
+			add = 10
+			tag = SOV
+		}
+	}
+	default = no
+	focus = {
+		id = Continue_The_Bloc
+		icon = GFX_focus_cze_german_puppet
+		cost = 10.00
+		mutually_exclusive = {
+			focus = End_Of_The_Bloc
+		}
+		x = 43
+		y = 1
+			completion_reward = {
+					add_political_power = 150
+				}
+
+	}
+	focus = {
+		id = End_Of_The_Bloc
+		icon = GFX_focus_generic_military_academy
+		cost = 10.00
+		mutually_exclusive = {
+			focus = Continue_The_Bloc
+		}
+		x = 48
+		y = 1
+			completion_reward = {
+					add_political_power = 150
+				}
+
+	}
+	focus = {
+		id = improve_russia
+		icon = GFX_focus_generic_join_comintern
+		cost = 10.00
+		x = 24
+		y = 1
+
+	}
+	focus = {
+		id = improve_military_fac
+		icon = GFX_focus_generic_military_academy
+		cost = 10.00
+		prerequisite = {
+			focus = improve_russia
+		}
+		x = 18
+		y = 2
+			available = {
+					SOV = {
+							owns_state = 219
+						}
+				}
+			completion_reward = {
+					219 = {
+							add_extra_state_shared_building_slots = 2
+							add_building_construction = {
+									type = arms_factory
+									level = 2
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = improve_military_fac_2
+		icon = GFX_focus_generic_military_mission
+		cost = 10.00
+		prerequisite = {
+			focus = improve_military_fac
+		}
+		x = 18
+		y = 3
+			available = {
+					SOV = {
+							owns_state = 219
+						}
+				}
+			completion_reward = {
+					219 = {
+							add_extra_state_shared_building_slots = 2
+							add_building_construction = {
+									type = arms_factory
+									level = 2
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = improve_military_fac_3
+		icon = GFX_focus_generic_license_production
+		cost = 10.00
+		prerequisite = {
+			focus = improve_military_fac_2
+		}
+		x = 18
+		y = 4
+			available = {
+					SOV = {
+							owns_state = 219
+						}
+				}
+			completion_reward = {
+					219 = {
+							add_extra_state_shared_building_slots = 2
+							add_building_construction = {
+									type = arms_factory
+									level = 2
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = improve_military_fac_4
+		icon = GFX_focus_generic_tank_production
+		cost = 10.00
+		prerequisite = {
+			focus = improve_military_fac_3
+		}
+		x = 18
+		y = 5
+			available = {
+					SOV = {
+							owns_state = 219
+						}
+				}
+			completion_reward = {
+					219 = {
+							add_extra_state_shared_building_slots = 2
+							add_building_construction = {
+									type = arms_factory
+									level = 2
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = improve_civ_fac_1
+		icon = GFX_focus_generic_industry_1
+		cost = 10.00
+		prerequisite = {
+			focus = improve_russia
+		}
+		x = 22
+		y = 2
+			available = {
+					owns_state = 219
+				}
+			completion_reward = {
+					219 = {
+							add_extra_state_shared_building_slots = 2
+							add_building_construction = {
+									type = industrial_complex
+									level = 2
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = improve_civ_fac_2
+		icon = GFX_focus_generic_industry_2
+		cost = 10.00
+		prerequisite = {
+			focus = improve_civ_fac_1
+		}
+		x = 22
+		y = 3
+			available = {
+					owns_state = 219
+				}
+			completion_reward = {
+					219 = {
+							add_extra_state_shared_building_slots = 2
+							add_building_construction = {
+									type = industrial_complex
+									level = 2
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = improve_civ_fac_3
+		icon = GFX_focus_generic_industry_3
+		cost = 10.00
+		prerequisite = {
+			focus = improve_civ_fac_2
+		}
+		x = 22
+		y = 4
+			available = {
+					owns_state = 219
+				}
+			completion_reward = {
+					219 = {
+							add_extra_state_shared_building_slots = 2
+							add_building_construction = {
+									type = industrial_complex
+									level = 2
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = improve_civ_fac_4
+		icon = GFX_focus_eng_crush_the_dream
+		cost = 10.00
+		prerequisite = {
+			focus = improve_civ_fac_3
+		}
+		x = 22
+		y = 5
+			available = {
+					owns_state = 219
+				}
+			completion_reward = {
+					219 = {
+							add_extra_state_shared_building_slots = 2
+							add_building_construction = {
+									type = industrial_complex
+									level = 2
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = improve_roads_1
+		icon = GFX_goal_generic_construct_infrastructure
+		cost = 10.00
+		prerequisite = {
+			focus = improve_russia
+		}
+		x = 26
+		y = 2
+			available = {
+					owns_state = 219
+				}
+			completion_reward = {
+					350 = {
+							add_building_construction = {
+									type = infrastructure
+									level = 2
+									instant_build = yes
+								}
+						}
+					350 = {
+							add_building_construction = {
+									type = infrastructure
+									level = 2
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = improve_roads_2
+		icon = GFX_goal_generic_construct_infrastructure
+		cost = 10.00
+		prerequisite = {
+			focus = improve_roads_1
+		}
+		x = 26
+		y = 3
+			available = {
+					owns_state = 219
+				}
+			completion_reward = {
+					350 = {
+							add_building_construction = {
+									type = infrastructure
+									level = 2
+									instant_build = yes
+								}
+						}
+					350 = {
+							add_building_construction = {
+									type = infrastructure
+									level = 2
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = improve_roads_3
+		icon = GFX_goal_generic_construct_infrastructure
+		cost = 10.00
+		prerequisite = {
+			focus = improve_roads_2
+		}
+		x = 26
+		y = 4
+			available = {
+					owns_state = 219
+				}
+			completion_reward = {
+					350 = {
+							add_building_construction = {
+									type = infrastructure
+									level = 2
+									instant_build = yes
+								}
+						}
+					350 = {
+							add_building_construction = {
+									type = infrastructure
+									level = 2
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = improve_roads_4
+		icon = GFX_focus_generic_concessions
+		cost = 10.00
+		prerequisite = {
+			focus = improve_roads_3
+		}
+		x = 26
+		y = 5
+			available = {
+					owns_state = 219
+				}
+			completion_reward = {
+					350 = {
+							add_building_construction = {
+									type = infrastructure
+									level = 2
+									instant_build = yes
+								}
+						}
+					350 = {
+							add_building_construction = {
+									type = infrastructure
+									level = 2
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = improve_airforce_1
+		icon = GFX_goal_generic_air_fighter
+		cost = 10.00
+		prerequisite = {
+			focus = improve_russia
+		}
+		x = 30
+		y = 2
+			available = {
+					owns_state = 219
+				}
+			completion_reward = {
+					219 = {
+							add_building_construction = {
+									type = air_base
+									level = 2
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = improve_airforce_2
+		icon = GFX_goal_generic_air_bomber
+		cost = 10.00
+		prerequisite = {
+			focus = improve_airforce_1
+		}
+		x = 30
+		y = 3
+			available = {
+					owns_state = 224
+				}
+			completion_reward = {
+					224 = {
+							add_building_construction = {
+									type = air_base
+									level = 2
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = improve_airforce_3
+		icon = GFX_goal_generic_air_fighter
+		cost = 10.00
+		prerequisite = {
+			focus = improve_airforce_2
+		}
+		x = 30
+		y = 4
+			available = {
+					owns_state = 329
+				}
+			completion_reward = {
+					329 = {
+							add_building_construction = {
+									type = air_base
+									level = 2
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = improve_airforce_4
+		icon = GFX_goal_generic_air_bomber
+		cost = 10.00
+		prerequisite = {
+			focus = improve_airforce_3
+		}
+		x = 30
+		y = 5
+			available = {
+					owns_state = 269
+				}
+			completion_reward = {
+					269 = {
+							add_building_construction = {
+									type = air_base
+									level = 2
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = develope_the_bloc
+		icon = GFX_focus_eng_decolonization
+		cost = 10.00
+		prerequisite = {
+			focus = Continue_The_Bloc
+		}
+		x = 41
+		y = 3
+			completion_reward = {
+					add_stability = 0.3
+				}
+
+	}
+	focus = {
+		id = Develope-ukraine
+		icon = GFX_focus_generic_industry_3
+		cost = 10.00
+		prerequisite = {
+			focus = develope_the_bloc
+		}
+		x = 39
+		y = 4
+			available = {
+					UKR = {
+							owns_state = 202
+							owns_state = 192
+							owns_state = 227
+						}
+				}
+			completion_reward = {
+					202 = {
+							add_extra_state_shared_building_slots = 2
+							add_building_construction = {
+									type = arms_factory
+									level = 2
+									instant_build = yes
+								}
+						}
+					192 = {
+							add_extra_state_shared_building_slots = 2
+							add_building_construction = {
+									type = arms_factory
+									level = 2
+									instant_build = yes
+								}
+						}
+					227 = {
+							add_extra_state_shared_building_slots = 2
+							add_building_construction = {
+									type = arms_factory
+									level = 2
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = develope-Baltics
+		icon = GFX_focus_generic_industry_1
+		cost = 10.00
+		prerequisite = {
+			focus = Develope-ukraine
+		}
+		x = 39
+		y = 5
+			available = {
+					LAT = {
+							owns_state = 189
+							owns_state = 12
+							owns_state = 13
+						}
+				}
+			completion_reward = {
+					13 = {
+							add_extra_state_shared_building_slots = 2
+							add_building_construction = {
+									type = arms_factory
+									level = 2
+									instant_build = yes
+								}
+						}
+					12 = {
+							add_extra_state_shared_building_slots = 2
+							add_building_construction = {
+									type = arms_factory
+									level = 2
+									instant_build = yes
+								}
+						}
+					189 = {
+							add_extra_state_shared_building_slots = 2
+							add_building_construction = {
+									type = arms_factory
+									level = 2
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = develope-romania
+		icon = GFX_focus_generic_industry_3
+		cost = 10.00
+		prerequisite = {
+			focus = develope_the_bloc
+		}
+		x = 41
+		y = 4
+			available = {
+					ROM = {
+							owns_state = 76
+							owns_state = 46
+							owns_state = 82
+						}
+				}
+			completion_reward = {
+					76 = {
+							add_extra_state_shared_building_slots = 2
+							add_building_construction = {
+									type = arms_factory
+									level = 2
+									instant_build = yes
+								}
+						}
+					46 = {
+							add_extra_state_shared_building_slots = 2
+							add_building_construction = {
+									type = arms_factory
+									level = 2
+									instant_build = yes
+								}
+						}
+					82 = {
+							add_extra_state_shared_building_slots = 2
+							add_building_construction = {
+									type = arms_factory
+									level = 2
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = devolpe-hungary
+		icon = GFX_focus_generic_industry_2
+		cost = 10.00
+		prerequisite = {
+			focus = develope-romania
+		}
+		x = 41
+		y = 5
+			available = {
+					HUN = {
+							owns_state = 43
+							owns_state = 154
+							owns_state = 155
+						}
+				}
+			completion_reward = {
+					43 = {
+							add_extra_state_shared_building_slots = 2
+							add_building_construction = {
+									type = arms_factory
+									level = 2
+									instant_build = yes
+								}
+						}
+					154 = {
+							add_extra_state_shared_building_slots = 2
+							add_building_construction = {
+									type = arms_factory
+									level = 2
+									instant_build = yes
+								}
+						}
+					155 = {
+							add_extra_state_shared_building_slots = 2
+							add_building_construction = {
+									type = arms_factory
+									level = 2
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = develope-poland
+		icon = GFX_focus_generic_industry_3
+		cost = 10.00
+		prerequisite = {
+			focus = develope_the_bloc
+		}
+		x = 43
+		y = 4
+			available = {
+					POL = {
+							owns_state = 10
+							owns_state = 98
+							owns_state = 90
+						}
+				}
+			completion_reward = {
+					10 = {
+							add_extra_state_shared_building_slots = 2
+							add_building_construction = {
+									type = arms_factory
+									level = 2
+									instant_build = yes
+								}
+						}
+					98 = {
+							add_extra_state_shared_building_slots = 2
+							add_building_construction = {
+									type = arms_factory
+									level = 2
+									instant_build = yes
+								}
+						}
+					90 = {
+							add_extra_state_shared_building_slots = 2
+							add_building_construction = {
+									type = arms_factory
+									level = 2
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = develope-Czech
+		icon = GFX_focus_generic_industry_1
+		cost = 10.00
+		prerequisite = {
+			focus = develope-poland
+		}
+		x = 43
+		y = 5
+			available = {
+					CZE = {
+							owns_state = 9
+							owns_state = 70
+							owns_state = 71
+						}
+				}
+			completion_reward = {
+					9 = {
+							add_extra_state_shared_building_slots = 2
+							add_building_construction = {
+									type = arms_factory
+									level = 2
+									instant_build = yes
+								}
+						}
+					70 = {
+							add_extra_state_shared_building_slots = 2
+							add_building_construction = {
+									type = arms_factory
+									level = 2
+									instant_build = yes
+								}
+						}
+					71 = {
+							add_extra_state_shared_building_slots = 2
+							add_building_construction = {
+									type = arms_factory
+									level = 2
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = a_slow_release
+		icon = GFX_goal_tripartite_pact
+		cost = 10.00
+		prerequisite = {
+			focus = End_Of_The_Bloc
+		}
+		x = 48
+		y = 2
+			completion_reward = {
+					add_political_power = 100
+				}
+
+	}
+	focus = {
+		id = pull_troops_back
+		icon = GFX_focus_generic_diplomatic_treaty
+		cost = 10.00
+		prerequisite = {
+			focus = a_slow_release
+		}
+		x = 47
+		y = 3
+			completion_reward = {
+					POL = {
+							add_stability = 0.2
+						}
+				}
+
+	}
+	focus = {
+		id = release_poland
+		icon = GFX_focus_generic_polish_deal
+		cost = 10.00
+		prerequisite = {
+			focus = pull_troops_back
+		}
+		x = 46
+		y = 4
+			completion_reward = {
+					set_autonomy = {
+							target = POL
+							autonomy_state = autonomy_free
+						}
+					POL = {
+							hidden_effect = {
+									set_politics = {
+											ruling_party = neutrality
+											last_election = "1935.11.14"
+											election_frequency = 48
+											elections_allowed = no
+										}
+									set_popularities = {
+											democratic = 17
+											fascism = 2
+											communism = 1
+											neutrality = 80
+										}
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = 3-split-deal
+		icon = GFX_goal_continuous_increase_nu
+		cost = 10.00
+		prerequisite = {
+			focus = release_poland
+		}
+		x = 47
+		y = 5
+			completion_reward = {
+					UKR = {
+							transfer_state = 89
+							transfer_state = 91
+							transfer_state = 93
+						}
+					BLR = {
+							transfer_state = 94
+							transfer_state = 95
+							transfer_state = 96
+						}
+					release = BLR
+					set_autonomy = {
+							target = BLR
+							autonomy_state = autonomy_free
+						}
+					LIT = {
+							transfer_state = 784
+						}
+					BLR = {
+							hidden_effect = {
+									set_politics = {
+											ruling_party = neutrality
+											last_election = "1935.11.14"
+											election_frequency = 48
+											elections_allowed = no
+										}
+									set_popularities = {
+											democratic = 17
+											fascism = 2
+											communism = 1
+											neutrality = 80
+										}
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = withdraw_from_middle-east
+		icon = GFX_focus_hol_the_foundations_of_defense
+		cost = 10.00
+		prerequisite = {
+			focus = a_slow_release
+		}
+		x = 49
+		y = 3
+			completion_reward = {
+					set_autonomy = {
+							target = ARM
+							autonomy_state = autonomy_free
+						}
+					set_autonomy = {
+							target = GEO
+							autonomy_state = autonomy_free
+						}
+					ARM = {
+							hidden_effect = {
+									set_politics = {
+											ruling_party = neutrality
+											last_election = "1935.11.14"
+											election_frequency = 48
+											elections_allowed = no
+										}
+									set_popularities = {
+											democratic = 17
+											fascism = 2
+											communism = 1
+											neutrality = 80
+										}
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = retreat-from-africa
+		icon = GFX_focus_generic_the_giant_wakes
+		cost = 10.00
+		prerequisite = {
+			focus = withdraw_from_middle-east
+		}
+		x = 49
+		y = 4
+			completion_reward = {
+					set_autonomy = {
+							target = SOA
+							autonomy_state = autonomy_free
+						}
+				}
+
+	}
+	focus = {
+		id = leave-the-baltics
+		icon = GFX_focus_generic_little_entente
+		cost = 10.00
+		prerequisite = {
+			focus = retreat-from-africa
+		}
+		x = 49
+		y = 5
+			completion_reward = {
+					EST = {
+							transfer_state = 13
+							transfer_state = 191
+						}
+					release = BLR
+					LIT = {
+							transfer_state = 189
+							transfer_state = 11
+							transfer_state = 188
+							transfer_state = 178
+						}
+					LAT = {
+							hidden_effect = {
+									set_politics = {
+											ruling_party = neutrality
+											last_election = "1935.11.14"
+											election_frequency = 48
+											elections_allowed = no
+										}
+									set_popularities = {
+											democratic = 17
+											fascism = 2
+											communism = 1
+											neutrality = 80
+										}
+								}
+						}
+					set_autonomy = {
+							target = LIT
+							autonomy_state = autonomy_free
+						}
+					set_autonomy = {
+							target = LAT
+							autonomy_state = autonomy_free
+						}
+					set_autonomy = {
+							target = EST
+							autonomy_state = autonomy_free
+						}
+				}
+
+	}
+	focus = {
+		id = leave-the-balkins
+		icon = GFX_focus_renounce_the_treaty_of_triannon
+		cost = 10.00
+		prerequisite = {
+			focus = retreat-from-africa
+		}
+		x = 51
+		y = 5
+			completion_reward = {
+					set_autonomy = {
+							target = ROM
+							autonomy_state = autonomy_free
+						}
+					set_autonomy = {
+							target = HUN
+							autonomy_state = autonomy_free
+						}
+					set_autonomy = {
+							target = BUL
+							autonomy_state = autonomy_free
+						}
+					HUN = {
+							hidden_effect = {
+									set_politics = {
+											ruling_party = neutrality
+											last_election = "1935.11.14"
+											election_frequency = 48
+											elections_allowed = no
+										}
+									set_popularities = {
+											democratic = 17
+											fascism = 2
+											communism = 1
+											neutrality = 80
+										}
+								}
+						}
+					ROM = {
+							hidden_effect = {
+									set_politics = {
+											ruling_party = neutrality
+											last_election = "1935.11.14"
+											election_frequency = 48
+											elections_allowed = no
+										}
+									set_popularities = {
+											democratic = 17
+											fascism = 2
+											communism = 1
+											neutrality = 80
+										}
+								}
+						}
+					BUL = {
+							hidden_effect = {
+									set_politics = {
+											ruling_party = neutrality
+											last_election = "1935.11.14"
+											election_frequency = 48
+											elections_allowed = no
+										}
+									set_popularities = {
+											democratic = 17
+											fascism = 2
+											communism = 1
+											neutrality = 80
+										}
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = release-germany
+		icon = GFX_focus_usa_focus_on_europe
+		cost = 10.00
+		prerequisite = {
+			focus = release_poland
+		}
+		x = 46
+		y = 6
+			completion_reward = {
+
+}
+
+	}
+	focus = {
+		id = full-decolonization
+		icon = GFX_goal_generic_forceful_treaty
+		cost = 10.00
+		prerequisite = {
+			focus = release-germany
+		}
+		x = 46
+		y = 7
+			completion_reward = {
+					set_autonomy = {
+							target = UKR
+							autonomy_state = autonomy_free
+						}
+					set_autonomy = {
+							target = KAZ
+							autonomy_state = autonomy_free
+						}
+					KAZ = {
+							hidden_effect = {
+									set_politics = {
+											ruling_party = neutrality
+											last_election = "1935.11.14"
+											election_frequency = 48
+											elections_allowed = no
+										}
+									set_popularities = {
+											democratic = 17
+											fascism = 2
+											communism = 1
+											neutrality = 80
+										}
+								}
+							UKR = {
+									hidden_effect = {
+											set_politics = {
+													ruling_party = neutrality
+													last_election = "1935.11.14"
+													election_frequency = 48
+													elections_allowed = no
+												}
+											set_popularities = {
+													democratic = 17
+													fascism = 2
+													communism = 1
+													neutrality = 80
+												}
+										}
+								}
+						}
+				}
+
+	}
+}

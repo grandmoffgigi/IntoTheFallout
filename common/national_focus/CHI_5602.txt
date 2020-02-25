@@ -1,0 +1,874 @@
+focus_tree = {
+	id = 5602
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = CHI
+		}
+	}
+	#Focus for A Stripped Land
+	focus = {
+		id = CHI_astrippedland
+		icon = GFX_astrippedland
+		x = 19
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = CHI_lookingwest }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Awakened the Shogun
+	focus = {
+		id = CHI_awakenedtheshogun
+		icon = GFX_focus_generic_japanese_imperial_glory
+		x = 12
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = CHI_ourinfluentialpromise }
+		mutually_exclusive = { 
+			focus = CHI_freedomchasers 
+			focus = CHI_remainingsilent 
+			focus = CHI_communismitis 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Just an Obstacle
+	focus = {
+		id = CHI_justanobstacle
+		icon = GFX_goal_generic_wolf_pack
+		x = 19
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = CHI_theothercommunists }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Asia is Ours!
+	focus = {
+		id = CHI_asiaisours
+		icon = GFX_focus_prc_agrarian_socialism
+		x = 14
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = CHI_unexpectedcoup 
+			focus = CHI_invitetothefaction 
+			focus = CHI_onelessally 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for One Less Ally
+	focus = {
+		id = CHI_onelessally
+		icon = GFX_focus_jap_pacific_guardian
+		x = 14
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = CHI_freedomchasers }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Invite to the Faction
+	focus = {
+		id = CHI_invitetothefaction
+		icon = GFX_goal_support_communism
+		x = 16
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = CHI_communismitis }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Unexpected Coup
+	focus = {
+		id = CHI_unexpectedcoup
+		icon = GFX_goal_generic_political_pressure
+		x = 12
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = CHI_awakenedtheshogun }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Communism it is!
+	focus = {
+		id = CHI_communismitis
+		icon = GFX_focus_generic_soviet_politics
+		x = 16
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = CHI_ourinfluentialpromise }
+		mutually_exclusive = { focus = CHI_awakenedtheshogun }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Our Influential Promise
+	focus = {
+		id = CHI_ourinfluentialpromise
+		icon = GFX_goal_generic_war_with_comintern
+		x = 13
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = CHI_lookingeast }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for The "Other" Communists
+	focus = {
+		id = CHI_theothercommunists
+		icon = GFX_focus_RAJ_lions_of_the_great_war
+		x = 19
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = CHI_astrippedland }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for The Mongolian Incident
+	focus = {
+		id = CHI_themongolianincident
+		icon = GFX_focus_generic_provoke_border_clashes
+		x = 7
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = CHI_futureofcommunism }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for The Fate of Europe
+	focus = {
+		id = CHI_thefateofeurope
+		icon = GFX_focus_usa_focus_on_europe
+		x = 6
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = CHI_themongolianincident }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Isolate from America
+	focus = {
+		id = CHI_isolatefromamerica
+		icon = GFX_focus_generic_treaty
+		x = 5
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = CHI_awarforlater }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Send Diplomats
+	focus = {
+		id = CHI_senddiplomats
+		icon = GFX_goal_tripartite_pact
+		x = 3
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = CHI_awarforlater }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Let them Fall!
+	focus = {
+		id = CHI_letthemfall
+		icon = GFX_focus_ger_bulwark_against_bolshevism
+		x = 9
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = CHI_futureofcommunism }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Enforce Rule
+	focus = {
+		id = CHI_enforcerule
+		icon = GFX_focus_ger_great_red_menace
+		x = 7
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = CHI_thefateofeurope }
+		mutually_exclusive = { focus = CHI_letthembe }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for The American Threat
+	focus = {
+		id = CHI_theamericanthreat
+		icon = GFX_focus_RAJ_lions_of_the_great_war
+		x = 3
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = CHI_kingofasia }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_manpower= 10000
+		}
+	}
+
+	#Focus for Belittle the USSR
+	focus = {
+		id = CHI_belittletheussr
+		icon = GFX_goal_generic_war_with_comintern
+		x = 7
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = CHI_kingofasia }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			SOV = {add_stability= -.1}
+		}
+	}
+
+	#Focus for Increase Influence
+	focus = {
+		id = CHI_increaseinfluence
+		icon = GFX_focus_chi_one_china_policy
+		x = 16
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = CHI_kingofasia }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_political_power= 150
+		}
+	}
+
+	#Focus for Looking South
+	focus = {
+		id = CHI_lookingsouth
+		icon = GFX_focus_RAJ_seek_help_from_soviet
+		x = 16
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = CHI_increaseinfluence }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Looking East
+	focus = {
+		id = CHI_lookingeast
+		icon = GFX_focus_chi_collaboration_with_the_japanese
+		x = 13
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = CHI_increaseinfluence }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Future of Communism
+	focus = {
+		id = CHI_futureofcommunism
+		icon = GFX_goal_anti_comintern_pact
+		x = 7
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = CHI_belittletheussr }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for To arms!
+	focus = {
+		id = CHI_toarms
+		icon = GFX_focus_chi_army_reform
+		x = 1
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = CHI_theamericanthreat }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for King of Asia
+	focus = {
+		id = CHI_kingofasia
+		icon = GFX_focus_prc_proclaim_the_peoples_republic
+		x = 8
+		y = 0
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_political_power= 100
+		}
+	}
+
+	#Focus for Wuhan Research Division
+	focus = {
+		id = CHI_wuhanresearchdivision
+		icon = GFX_focus_generic_socialist_science
+		x = 23
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = CHI_kingofasia }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_research_slot= 1
+		}
+	}
+
+	#Focus for Looking West
+	focus = {
+		id = CHI_lookingwest
+		icon = GFX_goal_generic_attack_allies
+		x = 19
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = CHI_increaseinfluence }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Propose Treaty
+	focus = {
+		id = CHI_proposetreaty
+		icon = GFX_focus_chi_mission_to_the_us
+		x = 4
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = CHI_theamericanthreat }
+		mutually_exclusive = { focus = CHI_threatenwar }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Threaten War
+	focus = {
+		id = CHI_threatenwar
+		icon = GFX_focus_generic_strike_at_democracy2
+		x = 2
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = CHI_theamericanthreat }
+		mutually_exclusive = { focus = CHI_proposetreaty }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for To War!
+	focus = {
+		id = CHI_towar
+		icon = GFX_focus_generic_strike_at_democracy3
+		x = 2
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = CHI_threatenwar 
+			focus = CHI_proposetreaty 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for A War for Later
+	focus = {
+		id = CHI_awarforlater
+		icon = GFX_focus_hol_war_on_pacifism
+		x = 4
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = CHI_proposetreaty }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for America Gives In!
+	focus = {
+		id = CHI_americagivesin
+		icon = GFX_goal_continuous_restrict_freedom
+		x = 0
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = CHI_threatenwar }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Prepare the Shores
+	focus = {
+		id = CHI_preparetheshores
+		icon = GFX_goal_generic_construct_military
+		x = 5
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = CHI_theamericanthreat }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Our Secret Empire
+	focus = {
+		id = CHI_oursecretempire
+		icon = GFX_goal_generic_soviet_construction
+		x = 6
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = CHI_isolatefromamerica 
+			focus = CHI_enforcerule 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Two Powers Remain
+	focus = {
+		id = CHI_twopowersremain
+		icon = GFX_goal_generic_political_pressure
+		x = 9
+		y = 7
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = CHI_chaosreigns }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Hong Kong Incident
+	focus = {
+		id = CHI_hongkongincident
+		icon = GFX_goal_continuous_suppression
+		x = 2
+		y = 8
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = CHI_lookforamericanappeasement }
+		mutually_exclusive = { focus = CHI_alaskanannexation }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Alaskan Annexation
+	focus = {
+		id = CHI_alaskanannexation
+		icon = GFX_goal_generic_demand_territory
+		x = 0
+		y = 8
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = CHI_lookforamericanappeasement }
+		mutually_exclusive = { focus = CHI_hongkongincident }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for We Compromise
+	focus = {
+		id = CHI_wecompromise
+		icon = GFX_goal_generic_national_unity
+		x = 1
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = CHI_threatenwar }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Chaos Reigns
+	focus = {
+		id = CHI_chaosreigns
+		icon = GFX_goal_generic_major_war
+		x = 9
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = CHI_letthembe }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Attack the American Oil
+	focus = {
+		id = CHI_attacktheamericanoil
+		icon = GFX_attacktheamericanoil
+		x = 6
+		y = 9
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = CHI_oursecretempire 
+			focus = CHI_twopowersremain 
+			focus = CHI_hongkongincident 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for The Alaskan Act
+	focus = {
+		id = CHI_thealaskanact
+		icon = GFX_goal_generic_forceful_treaty
+		x = 0
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = CHI_americagivesin }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Great Oil Act
+	focus = {
+		id = CHI_greatoilact
+		icon = GFX_focus_generic_treaty
+		x = 2
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = CHI_senddiplomats 
+			focus = CHI_wecompromise 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for The Balance of Power
+	focus = {
+		id = CHI_thebalanceofpower
+		icon = GFX_goal_generic_neutrality_focus
+		x = 2
+		y = 7
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = CHI_greatoilact }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Let Them Be
+	focus = {
+		id = CHI_letthembe
+		icon = GFX_goal_tfv_saf_anti_colonialist_crusade
+		x = 9
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = CHI_thefateofeurope }
+		mutually_exclusive = { focus = CHI_enforcerule }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Look for American Appeasement
+	focus = {
+		id = CHI_lookforamericanappeasement
+		icon = GFX_goal_generic_intelligence_exchange
+		x = 0
+		y = 7
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = CHI_thealaskanact }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Freedom Chasers
+	focus = {
+		id = CHI_freedomchasers
+		icon = GFX_goal_support_democracy
+		x = 14
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = CHI_ourinfluentialpromise }
+		mutually_exclusive = { focus = CHI_awakenedtheshogun }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Remaining Silent
+	focus = {
+		id = CHI_remainingsilent
+		icon = GFX_focus_eng_concessions_to_the_trade_unions
+		x = 10
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = CHI_ourinfluentialpromise }
+		mutually_exclusive = { focus = CHI_awakenedtheshogun }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for The Simplified Formula
+	focus = {
+		id = CHI_thesimplifiedformula
+		icon = GFX_focus_wonderweapons
+		x = 23
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = CHI_calculateshipyardefficiency 
+			focus = CHI_reverseengineeringplanes 
+			focus = CHI_technologyadvancement 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for The Wuhan Ten
+	focus = {
+		id = CHI_thewuhanten
+		icon = GFX_focus_YUG_zmaj
+		x = 23
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = CHI_increaseweaponresearch }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Reverse Engineering Planes
+	focus = {
+		id = CHI_reverseengineeringplanes
+		icon = GFX_goal_generic_air_fighter2
+		x = 21
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = CHI_thewuhanten }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Increase Weapon Research
+	focus = {
+		id = CHI_increaseweaponresearch
+		icon = GFX_goal_generic_small_arms
+		x = 23
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = CHI_wuhanresearchdivision }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Steal from our Enemy
+	focus = {
+		id = CHI_stealfromourenemy
+		icon = GFX_goal_generic_production2
+		x = 21
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = CHI_espionage }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Stealth Armor Research
+	focus = {
+		id = CHI_stealtharmorresearch
+		icon = GFX_goal_tfv_generic_tech_sharing
+		x = 25
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = CHI_stealthoperations }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Espionage
+	focus = {
+		id = CHI_espionage
+		icon = GFX_focus_generic_military_mission
+		x = 21
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = CHI_wuhanresearchdivision }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Clear the Unfit
+	focus = {
+		id = CHI_cleartheunfit
+		icon = GFX_goal_generic_secret_weapon
+		x = 17
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = CHI_lookingsouth }
+		mutually_exclusive = { focus = CHI_massthepeople }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Stealth Operations
+	focus = {
+		id = CHI_stealthoperations
+		icon = GFX_goal_tfv_generic_tech_sharing
+		x = 25
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = CHI_wuhanresearchdivision }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Mass the People
+	focus = {
+		id = CHI_massthepeople
+		icon = GFX_focus_RAJ_all_india_forward_bloc
+		x = 15
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = CHI_lookingsouth }
+		mutually_exclusive = { focus = CHI_cleartheunfit }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Calculate Shipyard Efficiency
+	focus = {
+		id = CHI_calculateshipyardefficiency
+		icon = GFX_goal_generic_navy_battleship
+		x = 25
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = CHI_thewuhanten }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Technology Advancement
+	focus = {
+		id = CHI_technologyadvancement
+		icon = GFX_goal_generic_consumer_goods
+		x = 23
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = CHI_thewuhanten }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+#End of focuses 
+ }

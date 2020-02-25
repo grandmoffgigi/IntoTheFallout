@@ -1,0 +1,31 @@
+state={
+	id=788
+	name="STATE_788"
+		
+		history={
+		owner = USA
+		add_core_of = USA
+		buildings = {
+			infrastructure = 2
+			air_base = 1
+			13091 = {
+				naval_base = 1
+
+			}
+
+		}
+
+
+	}
+	
+	provinces={
+		4833 13091 
+	}
+	manpower=20000
+	resources={
+		oil=6
+	}
+	
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

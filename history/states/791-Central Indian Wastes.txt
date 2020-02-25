@@ -1,0 +1,15 @@
+state={
+	id=791
+	name="STATE_791"
+	provinces={
+		1579 4072 4187 4557 4883 4950 7060 7177 7205 7430 7574 7619 10019 10030 10401 10872 12375 12420 12490 12781 12799 12854 
+	}
+	state_category = wasteland
+	impassable = yes
+
+	history={
+		owner = RAJ
+	}
+	manpower=45
+	buildings_max_level_factor=1.000
+}

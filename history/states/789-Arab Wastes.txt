@@ -1,0 +1,15 @@
+state={
+	id=789
+	name="STATE_789"
+	provinces={
+		5024 5081 5093 7995 8004 8030 8060 8118 10791 10870 12702 12727 12740 12768 12813 12870 
+	}
+	state_category = wasteland
+	impassable = yes
+
+	history={
+		owner = SAU
+	}
+	manpower=34
+	buildings_max_level_factor=1.000
+}

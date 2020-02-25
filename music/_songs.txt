@@ -1,0 +1,177 @@
+
+music_station = "base_music"
+
+music = {
+	song = "maintheme"
+	chance = {
+		modifier = {
+			factor = 0.5
+		}		
+	}
+}
+
+# GENERIC SONGS #
+# GREETS        #
+
+music = {
+	song = "Sixty Minute Man"
+	
+	chance = {
+		modifier = {
+			factor = 1
+			
+		}
+	}
+}
+
+music = {
+	song = "The End Of The World"
+	
+	chance = {
+		modifier = {
+			factor = 1
+			
+		}
+	}
+}
+
+music = {
+	song = "Anything Goes"
+	
+	chance = {
+		modifier = {
+			factor = 1
+			
+		}
+	}
+}
+
+music = {
+	song = "Big Iron"
+	
+	chance = {
+		modifier = {
+			factor = 1
+			
+		}
+	}
+}
+
+music = {
+	song = "House Of The Rising Sun"
+	
+	chance = {
+		modifier = {
+			factor = 1
+			
+		}
+	}
+}
+
+music = {
+	song = "Jingle Jangle Jingle"
+	
+	chance = {
+		modifier = {
+			factor = 1
+			
+		}
+	}
+}
+
+music = {
+	song = "Orange Colored Sky"
+	
+	chance = {
+		modifier = {
+			factor = 1
+			
+		}
+	}
+}
+
+music = {
+	song = "Paint It, Black"
+	
+	chance = {
+		modifier = {
+			factor = 1
+			
+		}
+	}
+}
+
+music = {
+	song = "Pistol Packin' Mama"
+	
+	chance = {
+		modifier = {
+			factor = 1
+			
+		}
+	}
+}
+
+music = {
+	song = "Rocket 69"
+	
+	chance = {
+		modifier = {
+			factor = 1
+			
+		}
+	}
+}
+
+music = {
+	song = "That's Life"
+	
+	chance = {
+		modifier = {
+			factor = 1
+			
+		}
+	}
+}
+
+music = {
+	song = "The Wanderer"
+	
+	chance = {
+		modifier = {
+			factor = 1
+			
+		}
+	}
+}
+
+music = {
+	song = "I Don't Want To Set The World On Fire"
+	
+	chance = {
+		modifier = {
+			factor = 1
+			
+		}
+	}
+}
+
+# SOVIET #
+
+music = {
+	song = "Oy Rana Na Ivana"
+	
+	chance = {
+		modifier = {
+			factor = 2
+			
+			TAG = SOV
+		}		
+	}	
+}
+
+# AMERICAN #
+
+# EUROPEAN #
+
+# CHINESE #
