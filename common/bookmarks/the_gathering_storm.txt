@@ -2,9 +2,9 @@ bookmarks = {
 	bookmark = {
 		name = "GATHERING_STORM_NAME"
 		desc = "GATHERING_STORM_DESC"
-		date = 1936.1.1.12
+		date = 2070.1.1.12
 		picture = "GFX_select_date_1936"
-		default_country = "GER"
+		default_country = "USA"
 		default = yes
 		
 		"FRA"={
@@ -43,7 +43,7 @@ bookmarks = {
 			}
 		}
 		"ENG"={
-			history = "Seeing the opportunity granted by the revolt of the Germans, the English have taken arms to retake the British Isles."
+			history = "ENG_GATHERING_STORM_DESC"
 			ideology = democratic
 			available = { NOT = { has_dlc = "Man the Guns" } }
 			ideas = {
@@ -54,7 +54,7 @@ bookmarks = {
 			}
 		}
 		"GER"={
-			history = "The start of the numerous European revolts, Germany has been forced on the defensive since the Commonwealth fully mobilized."
+			history = "GER_GATHERING_STORM_DESC"
 			ideology = fascism
 			available = { has_dlc = "Waking the Tiger" }
 			ideas = {
@@ -74,19 +74,6 @@ bookmarks = {
 			focuses = {
 
 			}
-		}
-		"ITA"={
-			history = "ITA_GATHERING_STORM_DESC"
-			ideology = fascism
-			ideas = {
-				vittoria_mutilata
-				victor_emmanuel
-			}	
-			focuses = {
-				ITA_pact_of_steel
-				ITA_spanish_italian_faction
-				ITA_italy_first
-			}		
 		}
 		"CWL"={
 			history = "The Commonwealth is in crisis. The Germans have revolted and the French nationalists have relanded in Northern France. To the south, the Balkan Empire makes its hatred of the Councils clear. Could this be the end of European Unity?"
@@ -127,18 +114,17 @@ bookmarks = {
 
 
 		# minors from DLC ####
-		"POL"={
+		"ITA"={
 			minor = yes
-			history = "POL_GATHERING_STORM_DESC"
-			ideology = neutrality
+			history = "ITA_GATHERING_STORM_DESC"
+			ideology = despotism
 			ideas = {
-				
-			}
+			}	
 			focuses = {
-				POL_the_baltic_alliance
-				POL_draw_closer_to_britain
-				POL_seek_accommodation_with_germany
-			}
+				ITA_pact_of_steel
+				ITA_spanish_italian_faction
+				ITA_italy_first
+			}		
 		}
 		"CAN"={
 			minor = yes
